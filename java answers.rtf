@@ -1,0 +1,110 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset0 Cambria Math;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 6.3.9600}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 1.)Steps to install java\par
+ans.Step 1: Download JDK\par
+Goto Java SE download site @ {{\field{\*\fldinst{HYPERLINK http://www.oracle.com/technetwork/java/javase/downloads/index.html }}{\fldrslt{http://www.oracle.com/technetwork/java/javase/downloads/index.html\ul0\cf0}}}}\f0\fs22 .\par
+Under "Java Platform, Standard Edition" \f1\u8658?\f0  "Java SE 8u\{xx\}", where \{xx\} is the latest update number \f1\u8658?\f0  Click the "JDK Download" button.\par
+Under "Java SE Development Kit 8u\{xx\}" \f1\u8658?\f0  Check "Accept License Agreement".\par
+Choose the JDK for your operating system, e.g., "Windows x64" (for 64-bit Windows OS) or "Windows x86" (for 32-bit Windows OS). You can check whether your Windows OS is 32-bit or 64-bit via "Control Panel" \f1\u8658?\f0  (Optional) System and Security \f1\u8658?\f0  System \f1\u8658?\f0  Under "System Type".\par
+Step 2: Install JDK and JRE\par
+Run the downloaded installer (e.g., "jdk-8u\{xx\}-windows-x64.exe"), which installs both the JDK and JRE. By default, the JDK will be installed in directory "C:\\Program Files\\Java\\jdk1.8.0_xx", where xx denotes the upgrade number; and JRE in "C:\\Program Files\\Java\\jre1.8.0_xx".\par
+Accept the defaults and follow the screen instructions to install JDK and JRE.\par
+Check the JDK installed directory by inspecting these folders using File Explorer. Take note of your JDK installed directory, in particular, the upgrade number, which you will need in the next step.\par
+JDK_Path.png\par
+I shall refer to the JDK installed directory as <JAVA_HOME>, hereafter, in this article.\par
+Step 3: Include JDK's "bin" Directory in the PATH\par
+Windows OS searches the current directory and the directories listed in the PATH environment variable for executable programs. JDK's programs (such as Java compiler javac.exe and Java runtime java.exe) reside in directory "<JAVA_HOME>\\bin" (where <JAVA_HOME> denotes the JDK installed directory). You need to include "<JAVA_HOME>\\bin" in the PATH to run the JDK programs.\par
+To edit the PATH environment variable in Windows 7/8/10:\par
+Launch "Control Panel" \f1\u8658?\f0  (Optional) System and Security \f1\u8658?\f0  System \f1\u8658?\f0  Click "Advanced system settings" on the left pane.\par
+Switch to "Advanced" tab \f1\u8658?\f0  Push "Environment Variables" button.\par
+Under "System Variables" (the bottom pane), scroll down to select "Path" \f1\u8658?\f0  Click "Edit...".\par
+(CAUTION: Read this paragraph 3 times before doing this step! There is no UNDO)\par
+For Windows 10: You shall see a table listing all the existing PATH entries. Click "New" \f1\u8658?\f0  Enter the JDK's binary directory "c:\\Program Files\\Java\\jdk1.8.0_xx\\bin" (Replace xx with your installation number!!!) \f1\u8658?\f0  Select "Move Up" to move this entry all the way to the TOP.\par
+Prior to Windows 10: In "Variable value" field, INSERT "c:\\Program Files\\Java\\jdk1.8.0_xx\\bin" (Replace xx with your installation number!!!) IN FRONT of all the existing directories, followed by a semi-colon (;) which separates the JDK's binary directory from the rest of the existing directories. DO NOT DELETE any existing entries; otherwise, some existing applications may not run.\par
+Variable name  : PATH\par
+Variable value : c:\\Program Files\\Java\\jdk1.8.0_xx\\bin;[exiting entries...]\par
+My Notes: Starting from JDK 1.8, the installation created a directory "c:\\ProgramData\\Oracle\\Java\\javapath" and added to the PATH. It contains only JRE executables (java.exe, javaw.exe, javaws.exe) but NOT the JDK executables (e.g., javac.exe).\par
+\par
+\par
+2.)Steps\f2  \f0 to\f2  \f0 install\f2  \f0 eclipse\par
+ans.)1\f2 .\f0 1\f2   \f0 For\f2  \f0 Windows\par
+Step\f2  \f0 0\f2 : \f0 Install\f2  \f0 JDK\par
+To\f2  \f0 use\f2  \f0 Eclipse\f2  \f0 for\f2  \f0 Java\f2  \f0 programming\f2 , \f0 you\f2  \f0 need\f2  \f0 to\f2  \f0 first\f2  \f0 install\f2  \f0 Java\f2  \f0 Development\f2  \f0 Kit\f2  (\f0 JDK\f2 ). \f0 Read\f2  \f0 "How\f2  \f0 to\f2  \f0 Install\f2  \f0 JDK\f2  \f0 for\f2  \f0 Windows"\f2 .\f0\par
+Step\f2  \f0 1\f2 : \f0 Download\par
+Download\f2  \f0 Eclipse\f2  \f0 from\f2  {\f0{\field{\*\fldinst{HYPERLINK https://www.eclipse.org/downloads }}{\fldrslt{https\f2 ://\f0 www\f2 .\f0 eclipse\f2 .\f0 org\f2 /\f0 downloads\ul0\cf0}}}}\f2\fs22 . \f0 Under\f2  \f0 "Get\f2  \f0 Eclipse\f2  \f0 Neon"\f2  \f1\u8658? Click "Download Packages". For beginners, choose the 3rd entry "Eclipse IDE for Java Developers" (32-bit or 64-bit) (e.g., "eclipse-java-neon-2-win32-x86_64.zip" 161MB) \u8658? Download.\par
+Step 2: Unzip\par
+To install Eclipse, simply unzip the downloaded file into a directory of your choice (e.g., "d:\\myproject").\par
+There is no need to run any installer. Moreover, you can simply delete the entire Eclipse directory when it is no longer needed (without running any un-installer). You are free to move or rename the directory. You can install (unzip) multiple copies of Eclipse in the same machine.\par
+\par
+\f2\lang1033 3.)steps to create workspace in eclipse\par
+ans.)I use File -> Switch Workspace -> Other... and type in my new workspace name.\par
+Once in the new workspace, File -> Import... and under General choose "Existing Projects into Workspace. Press the Next button and then Browse for the old projects you would like to import. Check "Copy projects into workspace" to make a copy\par
+\par
+4.)Steps to create project in eclipse\par
+ans.)Install the Eclipse IDE for Java Developers. ...\par
+Click "File" \u8594? "New" \u8594? "Java Project". ...\par
+Give the project a name. ...\par
+Select the location for the project files. ...\par
+Select Java Runtime Environment (JRE) you want to use. ...\par
+Select your project layout. ...\par
+Click "Next" to open the "Java Settings" window.\par
+Use the Source tab to define your build path\par
+Use the Libraries tab to add libraries to the project.\par
+Click "Finish" to start working on your new project\par
+\par
+5.)create .java file/class\par
+ans.)By clicking on the File menu and selecting New \u8594? Class.\par
+\par
+By right clicking in the package explorer and selecting New \u8594? Class.\par
+\par
+By clicking on the class drop down button (Drop Down Button ) and selecting class ( Class Button).\par
+\par
+6.)how to create packages and what is best way to give name\par
+ans.)As you said classname have the capitalization of first letter of every word, eg. LongClassName\par
+Sun always preferred long names that explain clearly the meaning of the class (think about DefaultTableModel). Code1 is definetely not right, maybe FibonacciCalc or something that contains Fibonacci would fit better.\par
+Preprend Abstract if it's an abstract class\par
+Append Impl if it's an implementation of a particular interface\par
+Package names should start with org, com, it, etc (usually it was the backward URL of project repository or the nick of the coder)\par
+You should split your packages according to functionality, your example is really simple so there is not a way to do it.\par
+\par
+7.)what is main method will do in java?\par
+ans.)All Java applications begin processing with a main() method;\par
+Each statement in the main executes in order until the end of main is reached -- this is when your program terminates;\par
+What does static mean? static means that you don't have to instantiate a class to call the method;\par
+String[] args is an array of String objects. If you were to run your program on the command line, you could pass in parameters as arguments. These parameters can then be accessed as you would access elements in an array: args[0]...args[n];\par
+public means that the method can be called by any object.\par
+\par
+8.)creating property/data members ?\par
+ans.)Start NetBeans.\par
+Create a Java Application named DepartmentStore3.\par
+To create a new class, in the Project window, right-click the DepartmentStore3 sub-folder under DepartmentStore3 -> New -> Java Class...\par
+Set the Class Name to StoreItem and click Finish.\par
+Right-click under StoreItem and click Insert Code...\par
+\par
+9.)what is data type and different data types`\par
+ans.)The platform independent feature of Java is achieved through bytecode. The eight primitive data types are: byte, short, int, long, float, double, boolean, and char. The java.lang.String class represents character strings.\par
+\par
+10.)What is variable?\par
+ans.)A Java variable is a piece of memory that can contain a data value. A variable thus has a data type. Data types are covered in more detail in the text on Java data types. Variables are typically used to store information which your Java program needs to do its job.\par
+\par
+11.)creating method with void ??\par
+ans.)For using a method, it should be called. There are two ways in which a method is called i.e., method returns a value or returning nothing (no return value).\par
+\par
+The process of method calling is simple. When a program invokes a method, the program control gets transferred to the called method. This called method then returns control to the caller in two conditions, when \u8722?\par
+\par
+the return statement is executed.\par
+it reaches the method ending closing brace.\par
+The methods returning void is considered as call to a statement.\par
+\par
+12.)creating variable, we can create variables inside method\par
+ans.) Scroll to a place where you want to insert the variable. Remember: If you place a variable in the main class, you can reference it anywhere. Choose the type of variable you need. Create the variable.\par
+\par
+13.)creating method with return data type, we can return int/string/double/float/date etc\par
+ans.)\par
+\par
+14.)\par
+\par
+\f0\lang9\par
+}
+ 
