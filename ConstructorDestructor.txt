@@ -1,0 +1,71 @@
+Constructor:
+------------------
+Constructor
+
+Constructors are special methods called when a class is instantiated.
+Constructor will not return anything.
+Constructor name is same as class name.
+By default C# will create default constructor internally.
+Constructor with no arguments and no body is called default constructor.
+Constructor with arguments is called parameterized constructor.
+Constructor by default public.
+We can create private constructors.
+A method with same name as class name is called constructor there is no separate keyword.
+
+Eg:
+    class Example
+    {
+        public static string name = "Rahul";
+        // Default constructor
+        public Welcome()
+        {
+            System.out.println("Welcome message from Default Constructor...");
+        }
+        static Example()  //Static Constructor
+        {
+            System.out.println("Name is {0}", name);
+        }
+        public Example(string Name)  //Parameterized Constructor
+        {
+            System.out.println("name is {0}", Name);
+        }
+    }
+namespace Constructors
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var example = new Example("Ramesh");
+            System.out.println("The Result is Displayed");
+        }
+    }
+}
+-------------------------------------------------------------------------------------
+Destructor:
+----------------
+.Net will clean up the un-used objects by using garbage collection process. It internally uses the destruction method to clean up the un-used objects. Some times the programmer needs to do manual cleanup.
+
+Eg:
+    class Welcome
+    {
+        // Default constructor
+        public Welcome()
+        {
+            System.out.println("Welcome message from Default Constructor...");
+        }
+        // Destructor
+        ~Welcome()
+        {
+            System.out.println("Destructor called");        
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Welcome obj = new Welcome();
+            System.out.println("All constructor are called");
+        }
+    }
+

@@ -1,0 +1,45 @@
+class Demo{  
+   //Blank final variable
+   final int MAX_VALUE;
+	 
+   Demo(){
+      //It must be initialized in constructor
+      MAX_VALUE=100;
+   }
+   void myMethod(){  
+      System.out.println(MAX_VALUE);
+   }  
+   public static void main(String args[]){  
+      Demo obj=new  Demo();  
+      obj.myMethod();  
+   }  
+}
+
+//Final Method
+class XYZ{  
+   final void demo(){
+      System.out.println("XYZ Class Method");
+   }  
+}  
+	     
+class ABC extends XYZ{  
+   public static void main(String args[]){  
+      ABC obj= new ABC();  
+      obj.demo();  
+   }  
+}
+
+
+//Final Class
+final class XYZ{  
+}  
+	     
+class ABC extends XYZ{  
+   void demo(){
+      System.out.println("My Method");
+   }  
+   public static void main(String args[]){  
+      ABC obj= new ABC(); 
+      obj.demo();
+   }  
+}

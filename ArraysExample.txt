@@ -1,0 +1,39 @@
+int[] myIntArray = new int[3];
+int[] myIntArray = {1,2,3};
+int[] myIntArray = new int[]{1,2,3};
+
+For classes, for example String, it's the same:
+
+String[] myStringArray = new String[3];
+String[] myStringArray = {"a","b","c"};
+String[] myStringArray = new String[]{"a","b","c"};
+------------------------------------------------------------------------------------------------------
+class Testarray{  
+public static void main(String args[]){  
+  
+int a[]=new int[5];//declaration and instantiation  
+a[0]=10;//initialization  
+a[1]=20;  
+a[2]=70;  
+a[3]=40;  
+a[4]=50;  
+  
+//printing array  
+for(int i=0;i<a.length;i++)//length is the property of array  
+System.out.println(a[i]);  
+  
+}}
+
+
+class Testarray1{  
+public static void main(String args[]){  
+  
+String[] b= new String[3];
+String[] b= {"a","b","c"};
+String[] b = new String[]{"a","b","c"}; 
+  
+//printing array  
+for(int i=0;i<b.length;i++)//length is the property of array  
+System.out.println(b[i]);  
+  
+}}

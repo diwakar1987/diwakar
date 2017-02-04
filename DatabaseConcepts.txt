@@ -1,0 +1,84 @@
+what is database ?
+A database is a collection of information that is organized so that it can easily be accessed, managed, and updated.
+
+what is table ?
+In relational databases and flat file databases, a table is a set of data elements (values) using a model of vertical columns (identifiable by name) and horizontal rows, the cell being the unit where a row and column intersect. A table has a specified number of columns, but can have any number of rows.
+
+what is Innerjoin ?
+nner join - An inner join using either of the equivalent queries gives the intersection of the two tables, i.e. the two rows they have in common.
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+INNER JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+
+what is LeftOuter join ?
+Left outer join - A left outer join will give all rows in A, plus any common rows in B.
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+
+what is right outer join ?
+A right outer join will give all rows in B, plus any common rows in A.
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+RIGHT JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+
+what is primary key ?
+The PRIMARY KEY constraint uniquely identifies each record in a database table.
+Primary keys must contain UNIQUE values.
+A primary key column cannot contain NULL values.
+Most tables should have a primary key, and each table can have only ONE primary key.
+CREATE TABLE Persons
+(
+P_Id int NOT NULL,
+LastName varchar(255) NOT NULL,
+FirstName varchar(255),
+Address varchar(255),
+City varchar(255),
+PRIMARY KEY (P_Id)
+)
+
+what is foreign key ?
+A FOREIGN KEY in one table points to a PRIMARY KEY in another table.
+The FOREIGN KEY constraint also prevents invalid data from being inserted into the foreign key column, because it has to be one of the values contained in the table it points to.
+CREATE TABLE Orders
+(
+O_Id int NOT NULL PRIMARY KEY,
+OrderNo int NOT NULL,
+P_Id int FOREIGN KEY REFERENCES Persons(P_Id)
+)
+
+what is where condition ?
+The WHERE clause is used to extract only those records that fulfill a specified criterion.
+SELECT column_name,column_name
+FROM table_name
+WHERE column_name operator value;
+
+what is groupby ?
+groupby is used to group a specific type of data like group of countries, departments, classes etc.
+SELECT * from Customers groupby salary;
+
+what is max() ?
+The MAX() function returns the largest value of the selected column.
+SELECT MAX(column_name) FROM table_name;
+
+what is Avg() ?
+The AVG() function returns the average value of a numeric column.
+SELECT AVG(column_name) FROM table_name
+
+what is having ?
+The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
+SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders FROM (Orders
+INNER JOIN Employees
+ON Orders.EmployeeID=Employees.EmployeeID)
+GROUP BY LastName
+HAVING COUNT(Orders.OrderID) > 10;
+
+what is nth max salary ?
+SELECT * from Employee Emp1 where (N-1) = (SELECT COUNT(DISTINCT (Emp2.salary)) from Employee Emp2 where Emp2.salary > Emp1.salary)
+
+
+
+

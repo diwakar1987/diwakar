@@ -1,0 +1,179 @@
+Why Testing is required ?
+Testing is required for an effective performance of software application or product. It's important to ensure that the application should not result into any failures because it can be very expensive in the future or in the later stages of the development.
+
+What type of applications we test ?
+Web, Desktop and Mobile applications
+
+Different Phases of SDLC ?
+The software development life cycle (SDLC) is a framework defining tasks performed at each step in the software development process.
+1. Requirement  2. Design 3.Coding 4.Testing  5.Deployment  6.Maintainance.
+
+What is waterfall Model ?
+The waterfall model is a sequential (non-iterative) design process, used in software development processes, in which progress is seen as flowing steadily downwards (like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, production/implementation and maintenance.
+
+what is Agile ?
+1. Active user involvement is imperative
+2. The team must be empowered to make decisions
+3. Requirements evolve but the timescale is fixed
+4. Capture requirements at a high level; lightweight & visual
+5. Develop small, incremental releases and iterate
+6. Focus on frequent delivery of products
+7. Complete each feature before moving on to the next
+8. Apply the 80/20 rule
+9. Testing is integrated throughout the project lifecycle – test early and often
+10. A collaborative & cooperative approach between all stakeholders is essential.
+
+what is SCRUM ?
+Scrum is also an agile development method, which concentrates particularly on how to manage tasks within a team-based development environment.  Scrum is the most popular and widely adopted agile method – I think because it is relatively simple to implement and addresses many of the management issues that have plagued IT development teams for decades.
+
+what is the process in agile method ?
+Agile SDLC model is a combination of iterative and incremental process models.Agile Methods break the product into small incremental builds. These builds are provided in iterations.
+
+what is daily standup meeting ?
+The whole team meets every day for a quick status update. We stand up to keep the meeting short.
+
+what is product backlog item ?
+Product Backlog Items can range from specifications and requirements, to use cases, epics, User Stories, or even bugs and chores. Each PBI must have these qualities:
+Description: What the goal of the PBI is.
+Value: the Business Value of the PBI as determined by the Product Owner.
+Estimate: the Team needs to estimate the relative effort it will take to move the PBI to Done.
+Order: The Product Owner needs to prioritize PBIs by their relative value.
+
+what is a user story ?
+A user story is a tool used in Agile software development to capture a description of a software feature from an end-user perspective. The user story describes the type of user, what they want and why. A user story helps to create a simplified description of a requirement
+
+what is sprint meeting ?
+Sprint planning is a collaborative effort involving a ScrumMaster, who facilitates the meeting, a Product Owner, who clarifies the details of the product backlog items and their respective acceptance criteria, and the Entire Agile Team, who define the work and effort necessary to meet their sprint commitment.
+
+what is review meeting ?
+At the end of each sprint, the team has produced a coded, tested and usable piece of software. So at the end of each sprint, a sprint review meeting is held.
+
+what is sprint retrospective ?
+The sprint retrospective is a meeting facilitated by the ScrumMaster at which the team discusses the just-concluded sprint and determines what could be changed that might make the next sprint more productive. The sprint review looks at what the team is building, whereas the retrospective looks at how they are building it.
+
+what is product grooming ?
+product backlog grooming in reference to keeping the backlog clean and orderly—
+It is a meeting that is held near the end of one sprint to ensure the backlog is ready for the next sprint.
+
+what is User Acceptance Test ?
+User acceptance testing (UAT) is the last phase of the software testing process. During UAT, actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications. UAT is one of the final and critical software project procedures that must occur before newly developed software is rolled out to the market.
+
+what is v model ?
+The V - model is SDLC model where execution of processes happens in a sequential manner in V-shape. It is also known as Verification and Validation model. V - Model is an extension of the waterfall model and is based on association of a testing phase for each corresponding development stage.
+
+what is stcl ?
+Software Testing Life Cycle (STLC) is defined as a sequence of activities conducted to perform Software Testing. It consists of series of activities carried out methodologically to help certify your software product. Diagram - Different stages in Software Test Life Cycle.
+
+what is defect bug cycle ?
+Defect Life Cycle or Bug Life Cycle is the specific set of states that a Bug goes through from discovery to defect fixation.
+New, Assigned, Open, Fixed, retest, reopen, verified, closed.
+
+regresstion testing ?
+Regression testing is the process of testing changes to computer programs to make sure that the older programming still works with the new changes. Regression testing is a normal part of the program development process 
+
+smoke testing ?
+smoke testing is a shallow and wide approach whereby all areas of the application without getting into too deep, is tested.
+A smoke test is scripted, either using a written set of tests or an automated test
+A Smoke test is designed to touch every part of the application in a cursory way. It’s shallow and wide.
+Smoke testing is conducted to ensure whether the most crucial functions of a program are working, but not bothering with finer details. (Such as build verification).
+Smoke testing is normal health check up to a build of an application before taking it to testing in depth.
+
+Sanity testing ?
+A sanity test is a narrow regression test that focuses on one or a few areas of functionality. Sanity testing is usually narrow and deep.
+A sanity test is usually unscripted.
+A Sanity test is used to determine a small section of the application is still working after a minor change.
+This level of testing is a subset of regression testing.
+Sanity testing is to verify whether requirements are met or not, checking all features breadth-first.
+
+what is alpha and beta testing ?
+Alpha testing is a type of acceptance testing; performed to identify all possible issues/bugs before releasing the product to everyday users or public. Alpha testing is carried out in a lab environment and usually the testers are internal employees of the organization. To put it as simple as possible, this kind of testing is called alpha only because it is done early on, near the end of the development of the software, and before beta testing.
+Beta Testing of a product is performed by "real users" of the software application in a "real environment" and can be considered as a form of external user acceptance testing.
+
+ Beta version of the software is released to a limited number of end-users of the product to obtain feedback on the product quality. Beta testing reduces product failure risks and provides increased quality of the product through customer validation.
+It is the final test before shipping a product to the customers. Direct feedback from customers is a major advantage of Beta Testing. This testing helps to tests the product in real time environment.
+
+what is automation testing ?
+Manually repeating these tests is costly and time consuming. Once created, automated tests can be run over and over again at no additional cost and they are much faster than manual tests. Automated software testing can reduce the time to run repetitive tests from days to hours.
+
+what is the role of tester in SDLC ?
+when srs document is given by the client ,test lead prepares test plan.and test engineer prepares test cases. and they will be having a mom(minites of meeting)in middle .when the build is released we start executing testcase and if we found any defect .we will be reporting to developer and  he fixes it as bug and  we perform regression testing and we release the build to maintenece.
+
+what is performance and Load testing ?
+Performance testing is the testing, which is performed, to ascertain how the components of a system are performing, given a particular situation. Resource usage, scalability and reliability of the product are also validated under this testing. This testing is the subset of performance engineering, which is focused on addressing performance issues in the design and architecture of software product.
+
+Load testing is meant to test the system by constantly and steadily increasing the load on the system till the time it reaches the threshold limit. It is the simplest form of testing which employs the use of automation tools such as LoadRunner or any other good tools, which are available. Load testing is also famous by the names like volume testing and endurance testing.
+
+Different types of non-functional testing types ?
+Load/performance, Compatibility, Localization, Security, Reliability, Stress, Usability, Compliance.
+
+what is a test case ?
+A test case is a document, which has a set of test data, preconditions, expected results and postconditions, developed for a particular test scenario in order to verify compliance against a specific requirement.
+
+what is test planning document ?
+ A document describing the scope, approach, resources and schedule of intended test activities.
+
+what is Entry and exit criteria ?
+Entry : Specific conditions or on-going activities that must be present before a process can begin.
+Exit : The specific conditions or on-going activities that must be present before a life cycle phase can be considered complete. The life cycle specifies which exit criteria are required at each phase.
+
+what is TDD and BDD ?
+TDD is an iterative development process. Each iteration starts with a set of tests written for a new piece of functionality. These tests are supposed to fail during the start of iteration as there will be no application code corresponding to the tests. In the next phase of the iteration Application code is written with an intention to pass all the tests written earlier in the iteration. Once the application code is ready tests are run.
+
+Behavior Driven testing is an extension of TDD. Like in TDD in BDD also we write tests first and the add application code. The major difference that we get to see here are
+Tests are written in plain descriptive English type grammar
+Tests are explained as behavior of application and are more user focused
+Using examples to clarify requirements.
+
+How we write test cases in BDD framework ?
+Feature : Sign up
+sign up should be fast and quick
+Scenario : Successful dign up
+new users should get a confirmation mail when they sign up and a greeting message.
+Given : I Have chosen to sign up.
+When : I sign up with valid details.
+Then : I should receive a confirmation mail.
+And : I shoul receive a personal greeting message.
+
+what is priority and severity in defect ?
+The priority status is set based on the customer requirements. While Severity is the extent to which the defect can affect the software. In other words it defines the impact that a given defect has on the system.
+
+
+what is test estimation for test cases ?
+Test estimation is a management activity which approximates how long a Task would take to complete. Estimating effort for the test is one of the major and important tasks in Test Management.
+
+List of Software Test Estimation Techniques
+Work Breakdown Structure
+3-Point Software Testing Estimation Technique
+Wideband Delphi technique
+Function Point/Testing Point Analysis
+Use – Case Point Method
+Percentage distribution
+Ad-hoc method.
+
+
+What is test design techniques ?
+By design we mean to create a plan for how to implement an idea and technique is a method or way for performing a task. So, Test Design is creating a set of inputs for given software that will provide a set of expected outputs.  The idea is to ensure that the system is working good enough and it can be released with as few problems as possible for the average user.
+
+Broadly speaking there are two main categories of Test Design Techniques. They are:
+Static Techniques
+Dynamic Techniques.
+
+
+what is requirement traceability matrix ?
+The Requirements Traceability Matrix (RTM) is a document that links requirements throughout the validation process. The purpose of the Requirements Traceability Matrix is to ensure that all requirements defined for a system are tested in the test protocols.
+
+what is development environment ?
+In computer program and software product development, the development environment is the set of processes and programming tools used to create the program or software product.
+
+what is QA environment ?
+A QA environment is where you test your upgrade procedure against data, hardware, and software that closely simulate the Production environment and where you allow intended users to test the resulting Waveset application. A Production environment is where the Waveset application is actually available for business use.
+
+what is staging environment ?
+A stage or staging environment is an environment for testing that exactly resembles the production environment. In other words, it's a complete but independent copy of the production environment, including the database. Staging provides a true basis for QA testing because it precisely reproduces what is in production.
+
+what is staging environment ?
+A production environment is where the real-time staging of programs that run an organization are executed, and includes the personnel, processes, data, hardware, and software needed to perform day-to-day operations.
+
+
+
+89,95,97,

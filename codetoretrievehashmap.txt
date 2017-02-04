@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class HashMapDemo {
+   public static void main(String args[]) {
+   // create hash map
+   HashMap newmap = new HashMap();
+      
+   // populate hash map
+   newmap.put(1, "Rahul");
+   newmap.put(2, "Didigum");
+   newmap.put(3, "saibersys");
+      
+   // get value of key 3
+   String val=(String)newmap.get(3);
+      
+   // check the value
+   System.out.println("Value for key 3 is: " + val);
+   }    
+}

@@ -1,0 +1,23 @@
+Difference between String StringBuffer StringBuilder ?
+
+String is immutable  ( once created can not be changed )object  . The object created as a String is stored in the  Constant String Pool  . 
+String  once assigned can not be changed.
+
+String  demo = " hello " ;
+// The above object is stored in constant string pool and its value can not be modified.
+demo="Bye" ;     //new "Bye" string is created in constant pool and referenced by the demo variable            
+ // "hello" string still exists in string constant pool and its value is not overrided but we lost reference to the  "hello"string  .
+
+StringBuffer is mutable means one can change the value of the object . The object created through StringBuffer is stored in the heap . StringBuffer  has the same methods as the StringBuilder , but each method in StringBuffer is synchronized that is StringBuffer is thread safe.
+StringBuffer demo1 = new StringBuffer("Hello") ;
+// The above object stored in heap and its value can be changed .
+demo1=new StringBuffer("Bye");
+// Above statement is right as it modifies the value which is allowed in the StringBuffer
+
+StringBuilder  is same as the StringBuffer , that is it stores the object in heap and it can also be modified . The main difference between the StringBuffer and StringBuilder is that StringBuilder is also not thread safe. 
+StringBuilder is fast as it is not thread safe .  
+
+StringBuilder demo2= new StringBuilder("Hello");
+// The above object too is stored in the heap and its value can be modified
+demo2=new StringBuilder("Bye"); 
+// Above statement is right as it modifies the value which is allowed in the StringBuilder

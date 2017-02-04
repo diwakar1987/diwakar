@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class DifferentMethods
+{
+  public void Method1(int a, int b)
+   {
+     int c;
+     c = a + b;
+     System.out.println(c);
+     }
+     public int Method2()
+     {
+       int a = 12;
+       int b = 13;
+       int c = a+b;
+       return c;
+       }
+       public int Method3(int a, int b,int c)
+       {
+         int d = a+b+c;
+         return d;
+        }
+}
+
+public class Callingmethods
+{
+  public static void main(String args[])
+   {
+      DifferentMethods df = new DifferentMethods();
+      df.Method1(5,6);
+      int f = df.method2();
+      System.out.println(f);  
+      int g = df.Method3(5,6,7);
+      System.out.println(g);      
+      }
+ }

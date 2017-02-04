@@ -1,0 +1,23 @@
+public class exceptions{
+
+    public static void main(String Args[]){
+
+        int[] array = new int[3];
+        try{
+            for(int i=0;i<4;++i){
+                array[i] = i;
+            }
+            System.out.println(array);
+            System.out.println("Hi");
+
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            //printed just to inform that we have entered the catch block
+            System.out.println("Oops, we went to far, better go back to 0!");
+        }
+        finally
+        {
+           System.out.println("This statement will surely executed");
+        }
+    }
+}
